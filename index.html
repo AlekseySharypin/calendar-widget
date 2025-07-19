@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Calendar Widget</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        .features {
+            margin-top: 40px;
+            text-align: left;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            margin: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        .features li:before {
+            content: "✨";
+            position: absolute;
+            left: 0;
+        }
+        .install-note {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📅 Personal Calendar Widget</h1>
+        <p>A beautiful calendar with your personal photos, holiday detection, and note-taking capabilities.</p>
+        
+        <a href="widget.html" class="btn">Open Calendar Widget</a>
+        
+        <div class="features">
+            <h3>✨ Features:</h3>
+            <ul>
+                <li>Personal photo backgrounds for each month</li>
+                <li>Automatic holiday detection for your country</li>
+                <li>Add notes to any date with reminders</li>
+                <li>10 languages supported</li>
+                <li>Works offline after installation</li>
+                <li>Responsive design for all devices</li>
+            </ul>
+        </div>
+        
+        <div class="install-note">
+            <strong>📱 iPhone Installation:</strong><br>
+            1. Tap "Open Calendar Widget" above<br>
+            2. Tap the Share button (⬆️)<br>
+            3. Tap "Add to Home Screen"<br>
+            4. Tap "Add" to install as an app
+        </div>
+    </div>
+
+    <script>
+        // Auto-redirect to widget on mobile if user prefers
+        if (window.location.search.includes('direct')) {
+            window.location.href = 'widget.html';
+        }
+    </script>
+</body>
+</html>
