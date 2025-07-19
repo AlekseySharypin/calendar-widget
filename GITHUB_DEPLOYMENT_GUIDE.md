@@ -50,25 +50,37 @@ https://YOUR-USERNAME.github.io/calendar-widget/widget.html
 
 ## 📱 Test on iPhone (After GitHub Deployment)
 
-### Method 1: Direct Installation
-1. Open Safari on your iPhone
-2. Go to your GitHub Pages URL: `https://alekseysharypin.github.io/calendar-widget/`
-3. Tap the "Open Calendar Widget" button
-4. Tap the Share button (⬆️) at the bottom of Safari
-5. Scroll down and tap "Add to Home Screen"
-6. You can change the name if you want, then tap "Add"
+### ⚠️ Important Note About iOS PWAs
+iOS treats PWAs (Progressive Web Apps) differently than Android. When you "Add to Home Screen" on iPhone, it creates a web app shortcut, not a native app. This is normal iOS behavior.
 
-### Method 2: If PWA Installation Appears
-Sometimes iOS will show a special PWA installation prompt:
-1. Open the widget in Safari
-2. Look for an "Install" button in the address bar or
-3. A banner might appear saying "Add Calendar Widget to Home Screen"
-4. Tap "Install" or "Add"
+### Installation Steps:
+1. **Open Safari** on your iPhone (must be Safari, not Chrome)
+2. **Go to your site**: `https://mywildlifestory.github.io/calendar-widget/`
+3. **Tap the Share button** (⬆️) at the bottom center of Safari
+4. **Scroll down** and tap "Add to Home Screen"
+5. **Change the name** if you want (default: "Calendar")
+6. **Tap "Add"** in the top right
+
+### What You'll Get:
+- ✅ **Home Screen Icon** - Your calendar appears as an app icon
+- ✅ **Standalone Mode** - Opens without Safari browser bars
+- ✅ **Offline Capability** - Works without internet after first load
+- ✅ **App-like Experience** - Feels like a native app
+- ❌ **Not in App Store** - Won't appear in iPhone widgets or App Store
+
+### iOS Widget Limitation:
+**iPhone widgets** (the ones you see when swiping right) can ONLY be added by apps downloaded from the App Store. Web apps cannot appear there - this is an Apple restriction.
 
 ### Troubleshooting:
-- **No "Add to Home Screen" option?** Make sure you're using Safari (not Chrome)
-- **Widget not working?** Try refreshing the page
-- **Installation not working?** Try the direct widget URL: `https://alekseysharypin.github.io/calendar-widget/widget.html`
+- **No "Add to Home Screen"?** Make sure you're using Safari browser
+- **Still looks like website?** The icon might take a minute to appear properly
+- **Want it in widgets?** You'd need to submit to App Store (which we prepared files for)
+
+### Alternative Testing:
+If the PWA features don't work perfectly, try:
+- Clear Safari cache and try again
+- Use the direct widget URL: `https://mywildlifestory.github.io/calendar-widget/widget.html`
+- Test in Safari's private browsing mode first
 
 ## ✅ Files in This Folder
 
@@ -103,4 +115,3 @@ After successful deployment:
 3. Consider submitting to app stores using the other files in the main project
 
 Good luck with your first GitHub deployment! 🚀
-
