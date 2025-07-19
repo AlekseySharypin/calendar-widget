@@ -40,7 +40,7 @@ This folder contains all the files you need to upload to GitHub to test your cal
 ### Step 5: Access Your Live Widget
 Your widget will be available at:
 ```
-https://YOUR-USERNAME.github.io/calendar-widget/
+https://mywildlifestory.github.io/calendar-widget/
 ```
 
 For direct widget access:
@@ -50,12 +50,25 @@ https://YOUR-USERNAME.github.io/calendar-widget/widget.html
 
 ## 📱 Test on iPhone (After GitHub Deployment)
 
+### Method 1: Direct Installation
 1. Open Safari on your iPhone
-2. Go to your GitHub Pages URL
+2. Go to your GitHub Pages URL: `https://alekseysharypin.github.io/calendar-widget/`
 3. Tap the "Open Calendar Widget" button
-4. Tap the Share button (⬆️)
-5. Tap "Add to Home Screen"
-6. Tap "Add" to install as an app
+4. Tap the Share button (⬆️) at the bottom of Safari
+5. Scroll down and tap "Add to Home Screen"
+6. You can change the name if you want, then tap "Add"
+
+### Method 2: If PWA Installation Appears
+Sometimes iOS will show a special PWA installation prompt:
+1. Open the widget in Safari
+2. Look for an "Install" button in the address bar or
+3. A banner might appear saying "Add Calendar Widget to Home Screen"
+4. Tap "Install" or "Add"
+
+### Troubleshooting:
+- **No "Add to Home Screen" option?** Make sure you're using Safari (not Chrome)
+- **Widget not working?** Try refreshing the page
+- **Installation not working?** Try the direct widget URL: `https://alekseysharypin.github.io/calendar-widget/widget.html`
 
 ## ✅ Files in This Folder
 
@@ -90,3 +103,4 @@ After successful deployment:
 3. Consider submitting to app stores using the other files in the main project
 
 Good luck with your first GitHub deployment! 🚀
+
